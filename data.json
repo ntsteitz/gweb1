@@ -1,0 +1,161 @@
+{
+  "records": [
+    {
+      "title": "Locomotive",
+      "artist": "FRAN",
+      "credit": "Co-Writer · Producer · Mix Engineer · Mastering · Background Vocals",
+      "image": "covers/locomotive.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Rockstar Girlfriend",
+      "artist": "Summer Joy",
+      "credit": "Producer · Mix Engineer · Mastering",
+      "image": "covers/rockstar-girlfriend.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "The Long Way Home",
+      "artist": "Kyra Baskin",
+      "credit": "Producer · Mix Engineer · Mastering",
+      "image": "covers/the-long-way-home.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Two Pint Taylor (In My Solitude)",
+      "artist": "Gus Benson",
+      "credit": "Producer · Co-Mix · Mastering",
+      "image": "covers/two-pint-taylor.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Wiley",
+      "artist": "gustafer",
+      "credit": "Producer · Writer · Mix Engineer · Mastering",
+      "image": "covers/wiley.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "In the Cards",
+      "artist": "gustafer",
+      "credit": "Producer · Writer · Mix Engineer · Mastering",
+      "image": "covers/in-the-cards.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "View",
+      "artist": "e.fin",
+      "credit": "Co-Producer · Guitar · Background Vocals",
+      "image": "covers/view.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "The Mountains",
+      "artist": "Emma Rosenkranz",
+      "credit": "Producer · Mix Engineer",
+      "image": "covers/the-mountains.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Vampire Empire - Live",
+      "artist": "Tabatha Rose",
+      "credit": "Background Vocals · Guitar",
+      "image": "covers/vampire-empire.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Who Else",
+      "artist": "aloe.401 and Gus Benson",
+      "credit": "Co-Producer · Writer",
+      "image": "covers/who-else.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Write Your Ticket",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/write-your-ticket.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Embarrassed",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/embarrassed.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Luna",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/luna.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Designer Drugs",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/designer-drugs.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Halfway Out the Door",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/halfway-out-the-door.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Changing",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/changing.jpg",
+      "spotify": "https://open.spotify.com"
+    },
+    {
+      "title": "Until You Came",
+      "artist": "Gus Benson",
+      "credit": "Writer · Producer · Mix Engineer · Mastering",
+      "image": "covers/until-you-came.jpg",
+      "spotify": "https://open.spotify.com"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Video Title",
+      "artist": "Artist Name",
+      "credit": "Producer · Director",
+      "youtubeId": "5KDrPzLPLa4",
+      "featured": true
+    },
+    {
+      "title": "Video Title",
+      "artist": "Artist Name",
+      "credit": "Producer",
+      "youtubeId": "JRkBTsvG4JU",
+      "featured": false
+    },
+    {
+      "title": "Video Title",
+      "artist": "Artist Name",
+      "credit": "Producer · Engineer",
+      "youtubeId": "yJ8vEb5I8pQ",
+      "featured": false
+    },
+    {
+      "title": "Video Title",
+      "artist": "Artist Name",
+      "credit": "Producer",
+      "youtubeId": "zHe8R19DkCw",
+      "featured": false
+    }
+  ],
+  "wbru": [
+    { "youtubeId": "7mUD7sH0gYk", "title": "WBRU Live Session" },
+    { "youtubeId": "wkbwMjjj94E", "title": "WBRU Live Session" },
+    { "youtubeId": "x9ZACmFJ5O8", "title": "WBRU Live Session" },
+    { "youtubeId": "K0ML0YLU46s", "title": "WBRU Live Session" },
+    { "youtubeId": "RBWNZPdQsxc", "title": "WBRU Live Session" },
+    { "youtubeId": "kwV3tHRSttE", "title": "WBRU Live Session" }
+  ]
+}
