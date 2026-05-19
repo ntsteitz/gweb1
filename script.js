@@ -240,7 +240,7 @@ function initReveal() {
    ============================================================ */
 const FALLBACK_DATA = {
   records: [
-    { title: "Locomotive",                    artist: "FRAN",                    credit: "Co-Writer · Producer · Mix Engineer · Mastering · Background Vocals", image: "covers/locomotive.jpg",             spotify: "https://open.spotify.com" },
+    { title: "Locomotive",                    artist: "FRAN",                    credit: "Co-Writer · Producer · Mix Engineer · Mastering · Background Vocals", image: "covers/Locomotive.jpg",             spotify: "https://open.spotify.com" },
     { title: "Rockstar Girlfriend",           artist: "Summer Joy",              credit: "Producer · Mix Engineer · Mastering",                                  image: "covers/rockstar-girlfriend.jpg",    spotify: "https://open.spotify.com" },
     { title: "The Long Way Home",             artist: "Kyra Baskin",             credit: "Producer · Mix Engineer · Mastering",                                  image: "covers/the-long-way-home.jpg",     spotify: "https://open.spotify.com" },
     { title: "Two Pint Taylor (In My Solitude)", artist: "Gus Benson",          credit: "Producer · Co-Mix · Mastering",                                        image: "covers/two-pint-taylor.jpg",       spotify: "https://open.spotify.com" },
