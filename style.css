@@ -470,23 +470,123 @@ textarea.cf-input      { resize: none; height: 96px; }
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+/* ── HAMBURGER MENU ── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 4px;
+  z-index: 600;
+}
+.nav-hamburger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--white);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+  z-index: 550;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  letter-spacing: .12em;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.mobile-menu a:hover { opacity: 1; }
+.mobile-menu-icons {
+  display: flex;
+  gap: 28px;
+  margin-top: 16px;
+}
+.mobile-menu-icons a { opacity: 0.5; transition: opacity 0.2s; }
+.mobile-menu-icons a:hover { opacity: 1; }
+.mobile-menu-icons svg { width: 22px; height: 22px; fill: var(--white); }
+
 @media (max-width: 960px) {
+  /* NAV */
   nav { padding: 0 24px; }
   .nav-links { display: none; }
-  .bio-section { grid-template-columns: 1fr; padding: 80px 24px; gap: 48px; }
-  .page-header { padding: 120px 24px 48px; }
+  .nav-icons { display: none; }
+  .nav-hamburger { display: flex; }
+
+  /* HERO */
+  .hero-roles { font-size: clamp(20px, 6vw, 36px); letter-spacing: .16em; }
+  .hero-location { font-size: 11px; letter-spacing: .2em; }
+  .hero-text { bottom: 8%; width: 90%; }
+
+  /* BIO */
+  .bio-section { grid-template-columns: 1fr; padding: 72px 24px 64px; gap: 40px; }
+  .bio-heading { font-size: clamp(40px, 10vw, 64px); }
+  .bio-body { max-width: 100%; }
+  .bio-img { aspect-ratio: 4/3; object-position: center 20%; }
+  .bio-img-border { display: none; }
+  .bio-stats { gap: 0; }
+  .bio-stat { padding-right: 20px; }
+  .bio-stat:nth-child(2) { padding-left: 20px; }
+  .bio-stat:last-child { padding-left: 20px; }
+  .bs-num { font-size: 40px; }
+
+  /* PAGE HEADER */
+  .page-header { padding: 100px 24px 36px; }
+  .ph-title { font-size: clamp(48px, 12vw, 80px); }
+
+  /* RECORDS */
   .records-grid { grid-template-columns: repeat(2, 1fr); }
-  .videos-section { padding: 20px; }
+  .ri-title { font-size: 15px; }
+  .ri-credit { font-size: 9px; }
+
+  /* VIDEOS */
+  .videos-section { padding: 16px; }
   .videos-grid { grid-template-columns: 1fr; gap: 12px; }
   .video-item.large { grid-column: span 1; }
+
+  /* WBRU */
   .carousel-slide { flex: 0 0 calc(50% - 10px); }
-  .wbru-section { padding: 32px 20px 60px; }
+  .wbru-section { padding: 32px 16px 60px; }
+  .wbru-header { flex-direction: column; align-items: flex-start; gap: 4px; padding: 0 0 24px; }
+  .wbru-sub { font-size: 11px; }
+  .carousel-btn { width: 36px; height: 36px; font-size: 16px; }
+
+  /* CONTACT */
   .contact-wrap { grid-template-columns: 1fr; }
-  .contact-left { padding: 120px 24px 64px; border-right: none; border-bottom: 1px solid var(--border); }
-  .contact-right { padding: 64px 24px 80px; }
+  .contact-left { padding: 100px 24px 48px; border-right: none; border-bottom: 1px solid var(--border); }
+  .contact-right { padding: 48px 24px 64px; }
+  .contact-heading { font-size: clamp(60px, 16vw, 96px); }
+
+  /* FOOTER */
   .site-footer { flex-direction: column; gap: 10px; padding: 28px 24px; text-align: center; }
 }
-@media (max-width: 560px) {
-  .records-grid { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 480px) {
+  /* Very small phones */
+  .hero-roles { font-size: 18px; letter-spacing: .12em; }
+  .bio-section { padding: 64px 20px 48px; }
+  .page-header { padding: 90px 20px 28px; }
+  .records-grid { grid-template-columns: repeat(2, 1fr); gap: 1px; }
+  .ri-title { font-size: 13px; }
   .carousel-slide { flex: 0 0 100%; }
+  .videos-section { padding: 12px; }
+  .videos-grid { gap: 10px; }
+  .contact-heading { font-size: 52px; }
+  .contact-left { padding: 90px 20px 40px; }
+  .contact-right { padding: 40px 20px 56px; }
 }

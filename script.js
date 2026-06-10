@@ -207,6 +207,16 @@ function initNav() {
   });
 }
 
+/* ── MOBILE HAMBURGER ── */
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('hamburger');
+  const open = menu.classList.toggle('open');
+  btn.classList.toggle('open', open);
+  // Prevent body scroll when menu is open
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+
 /* ── PAGE ROUTING ── */
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -215,8 +225,15 @@ function showPage(name) {
   document.querySelectorAll('[data-page]').forEach(a => {
     a.classList.toggle('active', a.dataset.page === name);
   });
+  // Close mobile menu if open
+  const menu = document.getElementById('mobileMenu');
+  const btn  = document.getElementById('hamburger');
+  if (menu && menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    btn && btn.classList.remove('open');
+    document.body.style.overflow = '';
+  }
   initReveal();
-
 }
 
 /* ── SCROLL REVEAL ── */
